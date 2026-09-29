@@ -59,7 +59,7 @@
       display: none;
       max-width: 960px;
       margin: 30px auto;
-      background: #8b68b3; /* Violeta inspirado en el suelo de la imagen */
+      background: #8b68b3; /* Violeta inspirado en el suelo retro */
       padding: 20px;
       border: 4px solid #ffffff;
       box-shadow: 8px 8px 0px #32436f;
@@ -216,10 +216,20 @@
     <div class="grid-games">
       
       <!-- JUEGO 1 -->
-      <div class="card-game" onclick="cargarJuego('https://tu-juego-1.netlify.app', 'Nombre del Juego 1')">
-        <img src="images/juego1.png" alt="Juego 1" onerror="this.src='https://via.placeholder.com/300x180?text=Juego+1'">
+      <div class="card-game" onclick="cargarJuego('juego1/index.html', 'Nombre del Juego 1')">
+        <!-- Puedes poner la imagen dentro de la carpeta del juego (juego1/thumb.png) -->
+        <img src="juego1/thumb.png" alt="Juego 1" onerror="this.src='https://via.placeholder.com/300x180/8b68b3/ffffff?text=Juego+1'">
         <div class="card-info">
           <h3>NOMBRE DEL JUEGO 1</h3>
+          <button class="btn-play">▶ JUGAR</button>
+        </div>
+      </div>
+
+      <!-- JUEGO 2 (Para agregar otro juego en el futuro, solo copias este bloque) -->
+      <div class="card-game" onclick="cargarJuego('juego2/index.html', 'Nombre del Juego 2')">
+        <img src="juego2/thumb.png" alt="Juego 2" onerror="this.src='https://via.placeholder.com/300x180/8b68b3/ffffff?text=Juego+2'">
+        <div class="card-info">
+          <h3>NOMBRE DEL JUEGO 2</h3>
           <button class="btn-play">▶ JUGAR</button>
         </div>
       </div>
@@ -253,5 +263,4 @@
     }
   </script>
 </body>
-</html>
 </html>
